@@ -1,0 +1,16 @@
+{
+	"name": "timestamp_miniapi",
+	"author": "Thiago HPC",
+	"version": "0.1.0",
+	"private": true,
+	"main": "app.js",
+	"description": "Backend HTTP API microservice that returns a JSON response containing a UNIX timestamp and natrural date information, givin a natural langauge date or a UNIX timestamp as an argument",
+	"scripts": {
+		"server": "node server.js",
+		"start": "node server.js"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"eslint": "^4.11.0"
+	}
+}
