@@ -8,14 +8,14 @@ a unix timestamp or natural language date as a parameter
 
 ### Usage
 Possible endpoints
-- *www.apiurl.com**/unixTimestamp** *
-- *www.apiurl.com**/naturalLanguageDate** *  
+- *www.apiurl.com/unixTimestamp*
+- *www.apiurl.com/naturalLanguageDate *  
   
 Example
-- *www.apiurl.com**/1388880000** *
-- *www.apiurl.com**/1388000** *
-- *www.apiurl.com**/January%2005%202014** *
-- *www.apiurl.com**/2014%2005%20january** *
+- *www.apiurl.com/1388880000** *
+- *www.apiurl.com/1388000 *
+- *www.apiurl.com/January%2005%202014 *
+- *www.apiurl.com/2014%2005%20january *
 
 **%20** is url encoding for a space character
 
