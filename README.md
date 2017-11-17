@@ -3,8 +3,9 @@
 
 
 ## Timestamp API Service
-Node JS API service that returns a unix timestamp and a set of natural language properties of a date given  
-a unix timestamp or natural language date as a parameter
+[Node JS API service](https://timestamp-miniapi.herokuapp.com/) that returns a unix timestamp and a set of natural language properties of a date given a unix timestamp or natural language date as a parameter.  
+
+[API URL](https://timestamp-miniapi.herokuapp.com/)
 
 ### Usage
 Possible endpoints
@@ -12,10 +13,10 @@ Possible endpoints
 - *www.apiurl.com/naturalLanguageDate *  
   
 Example
-- *www.apiurl.com/1388880000** *
-- *www.apiurl.com/1388000 *
-- *www.apiurl.com/January%2005%202014 *
-- *www.apiurl.com/2014%2005%20january *
+- *[www.apiurl.com/1388880000](https://timestamp-miniapi.herokuapp.com/1388880000)** *
+- *[www.apiurl.com/1388000](https://timestamp-miniapi.herokuapp.com/1388000) *
+- *[www.apiurl.com/January%2005%202014](https://timestamp-miniapi.herokuapp.com/January%2005%202014) *
+- *[www.apiurl.com/2014%2005%20january](https://timestamp-miniapi.herokuapp.com/2014%2005%20january) *
 
 **%20** is url encoding for a space character
 
