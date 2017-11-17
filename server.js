@@ -70,6 +70,7 @@ function OnServerStarted()
 */
 function OnServerRequest(request, response)
 {
+	console.log('Incoming url is: ', request.url);
 	let urlPath = url.parse(request.url).pathname;
 	let decodedUri;
 	try {
@@ -101,7 +102,7 @@ function OnServerRequest(request, response)
 * Returns response to send to the client.
 * An invalid inputDate will result in a response object with all its properties set to null.
 *
-* @param {int|string} UNIX timestamp or full natural language date (example "January 1 2013")
+* @param {int|string} inputDate - UNIX timestamp or full natural language date (example "January 1 2013")
 * @returns {string} - String representation of APIResponse object {APIResponse}
 */
 function BuildResponse(inputDate)
@@ -121,9 +122,10 @@ function BuildResponse(inputDate)
 
 	let dateObject = new Date(inputDate);
 	let dateIsInvalid = isNaN(dateObject.getTime() );
+
 	if(dateIsInvalid == true)
 	{
-		return BuildResponse(true);
+		return BuildResponseObject(true);
 	}
 
 	let unixTimestamp = MilisecondsToSeconds(dateObject.getTime() );
