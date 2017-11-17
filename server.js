@@ -49,7 +49,7 @@ function MilisecondsToSeconds(miliseconds)
 
 
 
-const serverPort = 80;
+const serverPort = process.env.port || 80;
 const server = http.createServer(OnServerRequest);
 server.listen(serverPort, OnServerStarted);
 
